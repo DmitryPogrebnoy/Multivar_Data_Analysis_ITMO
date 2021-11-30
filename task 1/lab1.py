@@ -190,7 +190,7 @@ def MLE_and_LSM_Lognormal(n, t, m, m1, lim):
     plt.plot(x, LSM_lognormal_for_LSM_and_MLE(n, m1), 'b--')
     plt.legend(['Maximum Likelihood Method', 'Least Squares Method'])
 
-    plt.xlabel(f'Distribution of' + t)
+    plt.xlabel(f'Distribution of ' + t)
     axes = plt.gca()
     axes.set_ylim([0, lim])
     plt.title('Maximum Likelihood Method and Least Squares Method. Lognormal')
@@ -204,7 +204,7 @@ def MLE_and_LSM_Normal(n, t, m, m1, lim):
     plt.plot(x, LSM_normal_for_LSM_and_MLE(n, m1), 'b--')
     plt.legend(['Maximum Likelihood Method', 'Least Squares Method'])
 
-    plt.xlabel(f'Distribution of' + t)
+    plt.xlabel(f'Distribution of ' + t)
     axes = plt.gca()
     axes.set_ylim([0, lim])
     plt.title('Maximum Likelihood Method and Least Squares Method. Normal')
@@ -252,11 +252,11 @@ print('Test for Average Price Normal')
 TestNorm(df['AveragePrice'])
 
 
-MLE_and_LSM_Lognormal(df['AveragePrice'], 'AveragePrice', 10, 100, 1.1)
+MLE_and_LSM_Lognormal(df['Average Price'], 'AveragePrice', 10, 100, 1.1)
 MLE_and_LSM_Lognormal(df['Total Volume'], 'Total Volume', 50, 100000, 0.0000008)
 MLE_and_LSM_Lognormal(df['4046'], 'Total number of avocados sold with PLU 4046', 50, 100000, 0.0000008)
 
-MLE_and_LSM_Normal(df['AveragePrice'], 'AveragePrice', 10, 100, 1.1)
+MLE_and_LSM_Normal(df['Average Price'], 'AveragePrice', 10, 100, 1.1)
 
 
 
